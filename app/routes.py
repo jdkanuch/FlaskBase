@@ -1,4 +1,5 @@
 # Defines the route-handlers for app
+from flask import Flask, render_template
 from app import app
 import logging
 
@@ -14,4 +15,4 @@ def server_error(e):
 
 @app.route('/')
 def home():
-    return "Hello"
+    return render_template('home.html')
