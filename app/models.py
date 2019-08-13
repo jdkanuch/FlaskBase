@@ -1,4 +1,6 @@
 # This module defines the DB Schema
+# Once flask-migrations is installed, can run 'flask db init' in terminal
+# to set up migrations
 
 from app import db
 
